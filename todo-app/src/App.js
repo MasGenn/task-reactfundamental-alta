@@ -1,10 +1,10 @@
 import TodoPage from "./pages/Todo/TodoPage";
-import { useState } from "react";
+
 // data
 import { task } from "./mockData";
 
 function App() {
-  return <TodoPage tasks={task} />;
+  return <TodoPage tasks={task} key={task.title} />;
 }
 
 export default App;

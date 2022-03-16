@@ -7,7 +7,7 @@ function TodoPage({ tasks }) {
       <Header />
 
       {tasks.map((task) => (
-        <TodoList task={tasks} />
+        <TodoList task={task} key={task.id} />
       ))}
     </>
   );
